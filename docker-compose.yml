@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ros-gazebo-colcon:
+    image: brean/ros-gazebo-colcon:noetic
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        ROS_DISTRO: noetic
